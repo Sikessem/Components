@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Sikessem\Filament\Commands;
 
 use Illuminate\Console\Concerns\CreatesMatchingTest;

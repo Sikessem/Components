@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Sikessem\Filament\Commands;
 
 use Symfony\Component\Console\Input\InputArgument;
