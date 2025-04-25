@@ -1,20 +1,30 @@
 {
     "name": "sikessem/filament",
-    "type": "project",
-    "description": "📦️ Sikessem library builder template.",
+    "type": "library",
+    "description": "Ready-to-use components, commands, presets, and customizations for Filament.",
     "homepage": "https://sikessem.github.io/packages/filament",
     "license": "MIT",
     "keywords": [
+        "silament",
         "sikessem",
-        "package-filament",
-        "repository-template",
+        "filament",
+        "laravel",
+        "livewire",
+        "tailwind",
+        "components",
+        "commands",
+        "presets",
+        "customizations",
+        "art",
+        "artisan",
+        "artisan commands",
         "php"
     ],
     "authors": [
         {
-            "name": "SIGUI Kessé Emmanuel",
-            "email": "contact@sigui.ci",
-            "homepage": "https://sigui.ci"
+            "name": "Sigui Kessé Emmanuel",
+            "email": "siguici@proton.me",
+            "homepage": "https://siguici.deno.dev"
         }
     ],
     "support": {
@@ -48,11 +58,6 @@
             "@inspect",
             "@review",
             "@test"
-        ],
-        "init:tools": [
-            "psalm --init",
-            "rector init",
-            "pest --init"
         ],
         "fix": [
             "@refactor",
