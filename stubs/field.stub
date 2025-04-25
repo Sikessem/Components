@@ -1,0 +1,25 @@
+<?php
+
+namespace {{ namespace }};
+
+use Filament\Forms\Components\{{ component }};
+use Filament\Tables\Columns\{{ column }};
+
+class {{ class }} extends Field
+{
+    protected static string $name = {{ name }};
+
+    protected static ?string $label = {{ label }};
+
+    public static function component(): {{ component }}
+    {
+        return {{ component }}::make(static::name())
+            ->label(static::label());
+    }
+
+    public static function column(): {{ column }}
+    {
+        return {{ column }}::make(static::name())
+            ->label(static::label());
+    }
+}
