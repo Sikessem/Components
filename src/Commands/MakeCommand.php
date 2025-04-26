@@ -30,6 +30,7 @@ abstract class MakeCommand extends GeneratorCommand
      *
      * @return string
      */
+    #[\Override]
     protected function getNameInput()
     {
         $name = str(parent::getNameInput())->studly();

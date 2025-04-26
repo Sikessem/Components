@@ -26,6 +26,7 @@ class MakeFieldCommand extends MakeCommand
      *
      * @return array
      */
+    #[\Override]
     protected function getArguments()
     {
         return [
@@ -44,6 +45,7 @@ class MakeFieldCommand extends MakeCommand
      *
      * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
+    #[\Override]
     protected function buildClass($name)
     {
         $stub = parent::buildClass($name);
@@ -72,6 +74,7 @@ class MakeFieldCommand extends MakeCommand
         return $this;
     }
 
+    #[\Override]
     protected function getDefaultNamespace($rootNamespace)
     {
         return $rootNamespace.'\\Fields';

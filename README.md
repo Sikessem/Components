@@ -67,7 +67,7 @@ Silament is open-sourced software licensed under the [MIT License][license-link]
 
 [sikessem-link]: https://github.com/sikessem "Sikessem"
 
-[php-icon]: https://img.shields.io/badge/PHP-8.2-ccc.svg?style=flat&logo=php
+[php-icon]: https://img.shields.io/badge/PHP-8.3-ccc.svg?style=flat&logo=php
 [php-link]: https://github.com/sikessem/filament/search?l=php "PHP code"
 
 [packagist-version-icon]: https://img.shields.io/packagist/v/sikessem/filament
