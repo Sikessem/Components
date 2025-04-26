@@ -13,10 +13,14 @@ class SilamentServiceProvider extends PackageServiceProvider
     {
         $package
             ->name('silament')
+            ->hasCommands($this->getCommands())
             ->hasConfigFile();
     }
 
-    public function getCommands(): array
+    /**
+     * @return array<class-string>
+     */
+    protected function getCommands(): array
     {
         return [
             Commands\MakeFieldCommand::class,
