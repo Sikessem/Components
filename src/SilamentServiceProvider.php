@@ -22,8 +22,25 @@ class SilamentServiceProvider extends PackageServiceProvider
      */
     protected function getCommands(): array
     {
-        return [
+        $commands = [
             Commands\MakeFieldCommand::class,
+        ];
+
+        $aliases = [];
+
+        foreach ($commands as $command) {
+            $class = __NAMESPACE__.'\\Commands\\Aliases\\'.class_basename($command);
+
+            if (! class_exists($class)) {
+                continue;
+            }
+
+            $aliases[] = $class;
+        }
+
+        return [
+            ...$commands,
+            ...$aliases,
         ];
     }
 }
