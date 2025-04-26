@@ -50,7 +50,6 @@ jobs:
 
       - name: ⚗️  Run static analysis
         run: |
-          composer verify
           composer analyse
           composer inspect
 

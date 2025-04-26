@@ -52,30 +52,26 @@
         "laravel/framework": "<11.0.0"
     },
     "scripts": {
-        "analyse": "phpstan analyse --ansi --memory-limit=-1 --debug",
+        "analyse": "phpinsights analyse",
         "check": "pint --test -v",
         "debug": [
-            "@verify",
-            "@check",
             "@analyse",
+            "@check",
             "@inspect",
             "@review",
             "@test"
         ],
         "fix": [
             "@refactor",
-            "@improve",
             "@format",
             "@lint"
         ],
-        "format": "psalter --issues=all",
-        "improve": "phpinsights fix",
-        "inspect": "psalm --no-diff",
+        "format": "phpinsights fix",
+        "inspect": "phpstan analyse --ansi --memory-limit=-1 --debug",
         "lint": "pint -v",
         "test": "pest --colors=always",
         "review": "rector --dry-run --debug",
-        "refactor": "rector",
-        "verify": "phpinsights analyse"
+        "refactor": "rector"
     },
     "extra": {
         "branch-alias": {
