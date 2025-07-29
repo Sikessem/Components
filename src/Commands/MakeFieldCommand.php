@@ -69,7 +69,7 @@ class MakeFieldCommand extends MakeCommand
             $subject = $subject->replace(['\\', '\''], ['\\\\', '\\\''])->wrap('\'');
         }
 
-        $stub = str_replace(['Dummy'.ucfirst($name), '{{ '.$name.' }}', '{{'.$name.'}}'], $subject, $stub);
+        $stub = str_replace(['Dummy'.ucfirst($name), '{{ '.$name.' }}', '{{'.$name.'}}'], (string) $subject, $stub);
 
         return $this;
     }
