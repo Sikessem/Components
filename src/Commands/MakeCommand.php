@@ -22,7 +22,7 @@ abstract class MakeCommand extends GeneratorCommand
 
         return file_exists($customPath = $this->laravel->basePath($stub))
             ? $customPath
-            : base_path($stub);
+            : dirname(__DIR__, 2).DIRECTORY_SEPARATOR.$stub;
     }
 
     /**
