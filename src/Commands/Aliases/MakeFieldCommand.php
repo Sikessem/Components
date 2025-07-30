@@ -12,5 +12,5 @@ class MakeFieldCommand extends Commands\MakeFieldCommand
 {
     protected $hidden = true;
 
-    protected $signature = 'silament:field';
+    protected $signature = 'silament:field {name} {component} {column} {label?} {--f|force}';
 }

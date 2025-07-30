@@ -23,6 +23,7 @@ class SilamentServiceProvider extends PackageServiceProvider
     protected function getCommands(): array
     {
         $commands = [
+            Commands\MakeBaseFieldCommand::class,
             Commands\MakeFieldCommand::class,
         ];
 

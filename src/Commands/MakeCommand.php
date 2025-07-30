@@ -34,9 +34,10 @@ abstract class MakeCommand extends GeneratorCommand
     protected function getNameInput()
     {
         $name = str(parent::getNameInput())->studly();
+        $type = str($this->type)->studly()->toString();
 
-        if (! $name->endsWith($this->type)) {
-            $name = $name->append(ucfirst($this->type));
+        if (! $name->endsWith($type)) {
+            $name = $name->append($type);
         }
 
         return $name->toString();
