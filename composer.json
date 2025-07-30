@@ -74,6 +74,13 @@
         "refactor": "rector"
     },
     "extra": {
+        "laravel": {
+            "providers": ["Sikessem\\Filament\\SilamentServiceProvider"],
+            "aliases": {
+                "Silament": "Sikessem\\Filament\\Silament"
+            },
+            "dont-discover": []
+        },
         "branch-alias": {
             "dev-main": "0.x-dev"
         }
