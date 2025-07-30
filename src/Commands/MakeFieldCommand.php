@@ -41,9 +41,10 @@ class MakeFieldCommand extends MakeCommand
      * Build the class with the given name.
      *
      * @param  string  $name
-     * @return string
      *
      * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     *
+     * @return string
      */
     #[\Override]
     protected function buildClass($name)

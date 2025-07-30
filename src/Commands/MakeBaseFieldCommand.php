@@ -44,9 +44,8 @@ class MakeBaseFieldCommand extends MakeCommand
     {
         $name = str(parent::getNameInput());
         $type = str($this->type)->studly()->toString();
-        $name = $name->beforeLast($type)->studly()->toString();
 
-        return $name;
+        return $name->beforeLast($type)->studly()->toString();
     }
 
     #[\Override]
