@@ -9,5 +9,5 @@ namespace Sikessem\Filament;
  */
 final class Silament
 {
-    public const string VERSION = '0.1.0';
+    public const string VERSION = '0.1.1';
 }
