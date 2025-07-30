@@ -27,7 +27,7 @@ and customizations to help build beautiful and powerful apps faster.
 
 ## 📖 Documentation
 
-Complete documentation is available at [sikessem.github.io/packages/filament][docs-link].
+Complete documentation is available at [sikessem.github.io/filament][docs-link].
 
 ## 👏 Contribution
 
@@ -79,8 +79,8 @@ Silament is open-sourced software licensed under the [MIT License][license-link]
 [actions-icon]: https://github.com/sikessem/filament/workflows/CI/badge.svg
 [actions-link]: https://github.com/sikessem/filament/actions "Silament status"
 
-[twitter-icon]: https://img.shields.io/twitter/follow/sikessem.svg?label=@SikessemHQ
-[twitter-link]: https://twitter.com/intent/follow?screen_name=SikessemHQ "Ping Sikessem"
+[twitter-icon]: https://img.shields.io/twitter/follow/SikessemEng.svg?label=@SikessemEng
+[twitter-link]: https://twitter.com/intent/follow?screen_name=SikessemEng "Ping Sikessem"
 
 [license-icon]: https://img.shields.io/badge/license-MIT-blue.svg
 [license-link]: https://github.com/sikessem/filament/blob/HEAD/LICENSE "Silament License"
