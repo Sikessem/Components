@@ -41,10 +41,9 @@ class MakeFieldCommand extends MakeCommand
      * Build the class with the given name.
      *
      * @param  string  $name
+     * @return string
      *
      * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
-     *
-     * @return string
      */
     #[\Override]
     protected function buildClass($name)
@@ -62,7 +61,9 @@ class MakeFieldCommand extends MakeCommand
 
     protected function replaceArgument(string &$stub, string $name, string $default = 'null'): static
     {
-        $subject = $name === 'name' ? str($this->getNameInput())->beforeLast(ucfirst($this->type))->snake() : str($this->argument($name))->trim();
+        $subject = $name === 'name'
+        ? str($this->getNameInput())->beforeLast(ucfirst($this->type))->snake()
+        : str($this->argument($name))->trim();
 
         if ($subject->isEmpty()) {
             $subject = $default;
@@ -75,8 +76,11 @@ class MakeFieldCommand extends MakeCommand
         return $this;
     }
 
+    /**
+     * @param  string  $rootNamespace
+     */
     #[\Override]
-    protected function getDefaultNamespace($rootNamespace)
+    protected function getDefaultNamespace($rootNamespace): string
     {
         return $rootNamespace.'\\Fields';
     }

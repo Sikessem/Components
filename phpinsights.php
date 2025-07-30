@@ -65,8 +65,9 @@ return [
     */
 
     'requirements' => [
+        'min-complexity' => 99.0,
         'min-quality' => 96.0,
-        'min-architecture' => 96.0,
+        'min-architecture' => 99.0,
         'min-style' => 96.0,
     ],
 ];
