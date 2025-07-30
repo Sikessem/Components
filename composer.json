@@ -33,9 +33,9 @@
         "chat": "https://github.com/orgs/sikessem/discussions"
     },
     "require": {
-        "php": ">=8.3",
+        "php": "*",
         "filament/filament": "^3.3",
-        "illuminate/console": "^12.10",
+        "illuminate/console": "^12.21",
         "spatie/laravel-package-tools": "^1.92"
     },
     "autoload": {
