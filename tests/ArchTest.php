@@ -7,15 +7,15 @@ arch('globals')
     ->not->toBeUsed();
 
 arch('classes')
-    ->expect('Sikessem\Filament')
+    ->expect('Sikessem\Components')
     ->toUseStrictTypes();
 
 arch('contracts')
-    ->expect('Sikessem\Filament\Contracts')
+    ->expect('Sikessem\Components\Contracts')
     ->interfaces()
-    ->toOnlyBeUsedIn('Sikessem\Filament', 'Sikessem\Filament\Contracts');
+    ->toOnlyBeUsedIn('Sikessem\Components', 'Sikessem\Components\Contracts');
 
 arch('concerns')
-    ->expect('Sikessem\Filament\Concerns')
+    ->expect('Sikessem\Components\Concerns')
     ->traits()
-    ->toOnlyBeUsedIn('Sikessem\Filament', 'Sikessem\Filament\Concerns');
+    ->toOnlyBeUsedIn('Sikessem\Components', 'Sikessem\Components\Concerns');

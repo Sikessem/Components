@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Sikessem\Filament\Commands;
+namespace Sikessem\Components\Commands;
 
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Input\InputArgument;
 
-#[AsCommand(name: 'make:silament-base-field')]
+#[AsCommand(name: 'make:sikessem-base-field')]
 class MakeBaseFieldCommand extends MakeCommand
 {
-    protected $signature = 'make:silament-base-field {name=Field : The name of the abstract field} {--f|force}';
+    protected $signature = 'make:sikessem-base-field {name=Field : The name of the abstract field} {--f|force}';
 
     protected $description = 'Create the base field';
 

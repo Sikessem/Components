@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Sikessem\Filament;
+namespace Sikessem\Components;
 
 /**
  * @api
  */
-final class Silament
+final class Components
 {
     public const string VERSION = '0.2.0';
 }

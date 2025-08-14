@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Sikessem\Filament\Commands;
+namespace Sikessem\Components\Commands;
 
 use Illuminate\Console\Concerns\CreatesMatchingTest;
 use Illuminate\Console\GeneratorCommand;

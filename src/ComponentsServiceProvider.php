@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Sikessem\Filament;
+namespace Sikessem\Components;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class SilamentServiceProvider extends PackageServiceProvider
+class ComponentsServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
         $package
-            ->name('silament')
+            ->name('sikessem-components')
             ->hasCommands($this->getCommands())
             ->hasConfigFile();
     }

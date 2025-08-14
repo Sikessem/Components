@@ -1,7 +1,7 @@
-# Release Notes for the Sikessem Filament
+# Release Notes for Sikessem's Components
 
-All notable changes to [Filament](https://github.com/sikessem/filament) will be documented in this file.
+All notable changes to [Sikessem's Components](https://github.com/sikessem/components) will be documented in this file.
 
-## [Unreleased](https://github.com/sikessem/filament/compare/v0.0.0...HEAD)
+## [Unreleased](https://github.com/sikessem/components/compare/v0.0.0...HEAD)
 
-**Full Changelog:** [v0.0.0...v0.x](https://github.com/sikessem/filament/compare/v0.0.0...v0.x)
+**Full Changelog:** [v0.0.0...v0.x](https://github.com/sikessem/components/compare/v0.0.0...v0.x)

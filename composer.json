@@ -1,11 +1,10 @@
 {
-    "name": "sikessem/filament",
+    "name": "sikessem/components",
     "type": "library",
-    "description": "Ready-to-use components, commands, presets, and customizations for Filament.",
+    "description": "Ready-to-use components, commands, presets, and customizations for Laravel & Filament.",
     "homepage": "https://sikessem.github.io/packages/filament",
     "license": "MIT",
     "keywords": [
-        "silament",
         "sikessem",
         "filament",
         "laravel",
@@ -28,8 +27,8 @@
         }
     ],
     "support": {
-        "source": "https://github.com/sikessem/filament",
-        "issues": "https://github.com/sikessem/filament/issues",
+        "source": "https://github.com/sikessem/components",
+        "issues": "https://github.com/sikessem/components/issues",
         "chat": "https://github.com/orgs/sikessem/discussions"
     },
     "require": {
@@ -40,12 +39,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Sikessem\\Filament\\": "src/"
+            "Sikessem\\Components\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Sikessem\\Filament\\Tests\\": "tests/"
+            "Sikessem\\Components\\Tests\\": "tests/"
         }
     },
     "conflict": {
@@ -75,9 +74,9 @@
     },
     "extra": {
         "laravel": {
-            "providers": ["Sikessem\\Filament\\SilamentServiceProvider"],
+            "providers": ["Sikessem\\Components\\ComponentsServiceProvider"],
             "aliases": {
-                "Silament": "Sikessem\\Filament\\Silament"
+                "SikessemComponents": "Sikessem\\Components\\Components"
             },
             "dont-discover": []
         },

@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Sikessem\Filament\Commands;
+namespace Sikessem\Components\Commands;
 
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Input\InputArgument;
 
-#[AsCommand(name: 'make:silament-field')]
+#[AsCommand(name: 'make:sikessem-field')]
 class MakeFieldCommand extends MakeCommand
 {
-    protected $signature = 'make:silament-field {name} {component} {column} {label?} {--f|force}';
+    protected $signature = 'make:sikessem-field {name} {component} {column} {label?} {--f|force}';
 
     protected $description = 'Create a new field';
 
