@@ -32,9 +32,9 @@
         "chat": "https://github.com/orgs/sikessem/discussions"
     },
     "require": {
-        "php": "^8.3",
-        "filament/filament": "^4.0",
-        "illuminate/console": "^12.24",
+        "php": ">=8.4",
+        "filament/filament": "^4.6",
+        "illuminate/console": "^12.48",
         "spatie/laravel-package-tools": "^1.92"
     },
     "autoload": {
@@ -96,6 +96,6 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require-dev": {
-        "sikessem/laravel-devtools": "^1.4"
+        "sikessem/laravel-devtools": "^1.5"
     }
 }
