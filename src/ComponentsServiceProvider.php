@@ -23,8 +23,9 @@ class ComponentsServiceProvider extends PackageServiceProvider
     protected function getCommands(): array
     {
         $commands = [
-            Commands\MakeBaseFieldCommand::class,
             Commands\MakeFieldCommand::class,
+            Commands\MakeInputCommand::class,
+            Commands\MakeColumnCommand::class,
         ];
 
         $aliases = [];

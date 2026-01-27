@@ -1,0 +1,20 @@
+<?php
+
+namespace {{ namespace }};
+
+use Filament\Forms\Components\{{ component }};
+
+class {{ class }} extends {{ field }}
+{
+    protected static string $name = {{ name }};
+
+    protected static ?string $label = {{ label }};
+
+    public static function component(?string $name = null): {{ component }}
+    {
+        $name ??= static::name();
+
+        return {{ component }}::make($name)
+            ->label(static::label());
+    }
+}

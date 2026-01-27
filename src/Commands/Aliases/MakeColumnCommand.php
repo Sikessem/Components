@@ -8,9 +8,9 @@ use Sikessem\Components\Commands;
 use Symfony\Component\Console\Attribute\AsCommand;
 
 #[AsCommand(name: 'sikessem:field')]
-class MakeFieldCommand extends Commands\MakeInputCommand
+class MakeColumnCommand extends Commands\MakeColumnCommand
 {
     protected $hidden = true;
 
-    protected $signature = 'sikessem:field {name} {component} {column} {label?} {--f|force}';
+    protected $signature = 'sikessem:column {name} {component} {column} {label?} {--f|force}';
 }

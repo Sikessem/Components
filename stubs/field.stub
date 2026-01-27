@@ -2,24 +2,19 @@
 
 namespace {{ namespace }};
 
-use Filament\Forms\Components\{{ component }};
-use Filament\Tables\Columns\{{ column }};
-
-class {{ class }} extends Field
+abstract class {{ class }}
 {
-    protected static string $name = {{ name }};
+    protected static ?string $label;
 
-    protected static ?string $label = {{ label }};
+    protected static string $name;
 
-    public static function component(): {{ component }}
+    public static function label(): string
     {
-        return {{ component }}::make(static::name())
-            ->label(static::label());
+        return __(static::$label ?: str(static::$name)->snake(' ')->title()->toString());
     }
 
-    public static function column(): {{ column }}
+    public static function name(): string
     {
-        return {{ column }}::make(static::name())
-            ->label(static::label());
+        return static::$name;
     }
 }

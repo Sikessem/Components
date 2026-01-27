@@ -8,7 +8,7 @@ use Sikessem\Components\Commands;
 use Symfony\Component\Console\Attribute\AsCommand;
 
 #[AsCommand(name: 'sikessem:base-field')]
-class MakeBaseFieldCommand extends Commands\MakeBaseFieldCommand
+class MakeBaseFieldCommand extends Commands\MakeFieldCommand
 {
     protected $hidden = true;
 

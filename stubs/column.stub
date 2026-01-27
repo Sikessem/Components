@@ -1,0 +1,20 @@
+<?php
+
+namespace {{ namespace }};
+
+use Filament\Tables\Columns\{{ column }};
+
+class {{ class }} extends {{ field }}
+{
+    protected static string $name = {{ name }};
+
+    protected static ?string $label = {{ label }};
+
+    public static function column(?string $name = null): {{ column }}
+    {
+        $name ??= static::name();
+
+        return {{ column }}::make($name)
+            ->label(static::label());
+    }
+}
